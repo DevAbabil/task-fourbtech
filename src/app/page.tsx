@@ -6,6 +6,7 @@ export default function HomePage() {
       <HomeComponents.Hero />
       <HomeComponents.Features />
       <HomeComponents.Branding />
+      <HomeComponents.Guide />
       <HomeComponents.Security />
       <HomeComponents.Plans />
       <HomeComponents.Testimonial />

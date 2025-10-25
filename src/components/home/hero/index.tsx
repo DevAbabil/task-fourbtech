@@ -23,7 +23,7 @@ const Hero = () => {
               EASY PAYMENT
             </p>
 
-            <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold leading-tight text-primary">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-primary">
               Pay{" "}
               <span className="relative inline-block text-primary">
                 fast and smarter

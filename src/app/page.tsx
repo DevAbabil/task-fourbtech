@@ -8,7 +8,7 @@ export default function HomePage() {
       <HomeComponents.Branding />
       <HomeComponents.Guide />
       <HomeComponents.Security />
-      <HomeComponents.Plans />
+      <HomeComponents.Pricing />
       <HomeComponents.Testimonial />
       <HomeComponents.Download />
     </div>

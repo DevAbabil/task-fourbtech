@@ -44,7 +44,7 @@ const pricing_data: Array<{
 
 const Pricing = () => {
   return (
-    <section className="px-5 py-20 container mx-auto">
+    <section className="px-5 py-20 container mx-auto" id="pricing">
       <h3 className="text-[#932EFA] text-center font-semibold">PRICING</h3>
       <h2 className="text-[40px] text-center font-bold max-w-2xl mx-auto mt-3">
         Simple transparent pricing, no hidden fees

@@ -2,7 +2,7 @@ import SecurityCard from "./SecurityCard";
 
 const Security = () => {
   return (
-    <section className="px-5 mt-10 pt-20 pb-20">
+    <section className="px-5 mt-10 pt-20 pb-20" id="security">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-5">
           <div>

@@ -3,19 +3,19 @@ import Link from "next/link";
 const NavItem: Array<{ label: string; path: string }> = [
   {
     label: "Features",
-    path: "/Features",
+    path: "#features",
   },
   {
     label: "Pricing",
-    path: "/pricing",
+    path: "#pricing",
   },
   {
     label: "Security",
-    path: "/security",
+    path: "#security",
   },
   {
     label: "Benefits",
-    path: "/benefits",
+    path: "#benefits",
   },
 ];
 

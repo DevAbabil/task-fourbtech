@@ -4,7 +4,7 @@ import GuideCards from "./GuideCards";
 
 const Guide = () => {
   return (
-    <section className="px-5 mt-10 pt-20 pb-20 bg-[#F6F6F6]">
+    <section className="px-5 mt-10 pt-20 pb-20 bg-[#F6F6F6]" id="benefits">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-5">
           <div>

@@ -16,7 +16,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col-reverse xl:flex-row justify-between">
-          <div className="text-center md:text-left py-26 w-full">
+          <div className="text-center md:text-left py-26 w-full lg:w-[60%]">
             <p className="text-sm md:text-base text-muted-foreground font-semibold tracking-wide">
               EASY PAYMENT
             </p>
@@ -64,9 +64,9 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex w-full gap-3 flex-col md:px-[300px] py-[295px] relative z-1">
-            <PaymentReceived className="w-full md:w-auto md:absolute md:bottom-14 md:right-120" />
-            <ActiveUsers className="w-full md:w-auto md:absolute md:bottom-73 md:right-8" />
+          <div className="flex w-full lg:w-[40%] gap-3 flex-col md:px-[300px] py-[295px] relative z-1">
+            <PaymentReceived className="w-full md:w-[230px] md:absolute md:bottom-14 md:right-120" />
+            <ActiveUsers className="w-full md:w-[230px]  md:absolute md:bottom-73 md:right-8" />
             <div className="bg-[url('/assets/hero-man.png')] bg-no-repeat transform scale-x-[-1]  bg-cover w-[620px] h-[600px]  absolute bottom-0 right-0 -z-1"></div>
           </div>
         </div>

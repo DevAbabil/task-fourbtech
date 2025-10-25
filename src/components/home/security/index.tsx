@@ -14,7 +14,7 @@ const Security = () => {
             </h2>
           </div>
 
-          <p className="w-md">
+          <p className="md:w-md">
             Easy Pay ensures your money is protected at every step with advanced
             encryption, real-time monitoring, and multi-factor authentication.
           </p>

@@ -94,7 +94,7 @@ bun run start
 Deployed on **Vercel** for optimal performance and serverless hosting.
 
 **Live Link:** [https://fourbtech.vercel.app](https://fourbtech.vercel.app)  
-**GitHub Repository:** [https://github.com/DevAbabil/task-fourbtech](https://github.com/DevAbabil/fourbtech-frontend-task)
+**GitHub Repository:** [https://github.com/DevAbabil/task-fourbtech](https://github.com/DevAbabil/task-fourbtech)
 
 ## Submission Info
 

@@ -45,7 +45,7 @@ const security_data: Array<{
 
 const SecurityCard = () => {
   return (
-    <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left bg-[url('/assets/security-banner.png')] bg-cover bg-center p-15 rounded-2xl">
+    <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 text-left bg-[url('/assets/security-banner.png')] bg-cover bg-center p-1 md:p-15 rounded-2xl">
       {security_data.map((item, index) => {
         const isMiddleColumn = index % 3 === 1;
 

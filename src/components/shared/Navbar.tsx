@@ -21,7 +21,7 @@ const NavItem: Array<{ label: string; path: string }> = [
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-center items-center flex-wrap gap-8">
+    <nav className="flex justify-center items-center flex-wrap gap-2 md:gap-8">
       {NavItem.map(({ label, path }) => (
         <Link
           href={path}

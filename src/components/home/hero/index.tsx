@@ -1,13 +1,20 @@
+"use client";
 import { Button, Logo, Navbar } from "@/components";
 import Image from "next/image";
 import ActiveUsers from "./ActiveUsers";
 import PaymentReceived from "./PaymentReceived";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section className="m-4 md:m-6 bg-[url('/assets/hero-bg.png')] bg-cover bg-right rounded-3xl overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-4 md:py-6 flex-wrap gap-4">
+        <motion.div
+          className="flex justify-between items-center py-4 md:py-6 flex-wrap gap-4"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
           <div className="inline-block mx-auto md:block md:ml-0">
             <Logo />
           </div>
@@ -17,15 +24,25 @@ const Hero = () => {
           <Button variant="fill" className="w-full md:w-auto">
             Contact Us
           </Button>
-        </div>
+        </motion.div>
 
         <div className="flex flex-col-reverse xl:flex-row justify-between">
-          <div className="text-center md:text-left py-26 w-full lg:w-[60%]">
+          <motion.div
+            className="text-center md:text-left py-26 w-full lg:w-[60%]"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             <p className="text-sm md:text-base text-muted-foreground font-semibold tracking-wide">
               EASY PAYMENT
             </p>
 
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-primary">
+            <motion.h1
+              className="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-primary"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.8 }}
+            >
               Pay{" "}
               <span className="relative inline-block text-primary">
                 fast and smarter
@@ -33,14 +50,19 @@ const Hero = () => {
               </span>
               <br className="hidden sm:block" />
               from anywhere
-            </h1>
+            </motion.h1>
 
             <p className="text-sm md:text-base text-muted-foreground font-medium py-6">
               Experience the future of payments — fast, secure, and tailored for
               the next generation&apos;s convenience and trust.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3 pt-8">
+            <motion.div
+              className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3 pt-8"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.8 }}
+            >
               <button className="px-8 bg-foreground text-primary-foreground flex items-center gap-x-2 rounded-md p-2">
                 <Image
                   src={"/assets/apple.svg"}
@@ -65,14 +87,19 @@ const Hero = () => {
                   <h3 className="font-bold">Google Play</h3>
                 </div>
               </button>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
-          <div className="flex w-full mx-auto lg:w-[40%] gap-3 flex-col md:px-[300px] py-[295px] relative z-1">
+          <motion.div
+            className="flex w-full mx-auto lg:w-[40%] gap-3 flex-col md:px-[300px] py-[295px] relative z-1"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+          >
             <PaymentReceived className="w-full md:w-[230px] md:absolute md:bottom-14 md:right-120" />
             <ActiveUsers className="w-full md:w-[230px]  md:absolute md:bottom-73 md:right-8" />
             <div className="bg-[url('/assets/hero-man.png')] bg-no-repeat transform scale-x-[-1]  bg-cover w-[620px] h-[600px]  absolute bottom-0 right-0 -z-1"></div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

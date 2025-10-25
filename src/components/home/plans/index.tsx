@@ -1,5 +1,5 @@
 const Plans = () => {
-  return <section>Plans</section>;
+  return <section></section>;
 };
 
 export default Plans;

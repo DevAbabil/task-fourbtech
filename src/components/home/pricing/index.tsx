@@ -1,6 +1,9 @@
+"use client";
+
 import Button from "@/components/shared/Button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const pricing_data: Array<{
   label: string;
@@ -45,14 +48,30 @@ const pricing_data: Array<{
 const Pricing = () => {
   return (
     <section className="px-5 py-20 container mx-auto" id="pricing">
-      <h3 className="text-[#932EFA] text-center font-semibold">PRICING</h3>
-      <h2 className="text-[30px] md:text-[40px] text-center font-bold max-w-2xl mx-auto mt-3">
-        Simple transparent pricing, no hidden fees
-      </h2>
+      <motion.div
+        className="text-center"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+        <h3 className="text-[#932EFA] font-semibold">PRICING</h3>
+        <h2 className="text-[30px] md:text-[40px] font-bold max-w-2xl mx-auto mt-3">
+          Simple transparent pricing, no hidden fees
+        </h2>
+      </motion.div>
 
-      <div className="mt-12 grid gap-10  sm:grid-cols-2 lg:grid-cols-3">
+      <motion.div
+        className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={{
+          visible: { transition: { staggerChildren: 0.2 } },
+        }}
+      >
         {pricing_data.map((plan, index) => (
-          <div
+          <motion.div
             key={index}
             className={cn(
               "rounded-2xl shadow-md p-8 flex flex-col justify-between transition-shadow duration-300",
@@ -60,6 +79,11 @@ const Pricing = () => {
                 ? "bg-primary text-primary-foreground shadow-lg"
                 : "bg-card text-foreground hover:shadow-xl"
             )}
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.6 }}
           >
             <h3
               className={cn(
@@ -136,9 +160,9 @@ const Pricing = () => {
             <Button variant={plan.label === "Advanced" ? "fill" : "bordered"}>
               Choose Plan
             </Button>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

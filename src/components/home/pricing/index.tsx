@@ -50,7 +50,7 @@ const Pricing = () => {
         Simple transparent pricing, no hidden fees
       </h2>
 
-      <div className="mt-12 grid gap-30 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 grid gap-10  sm:grid-cols-2 lg:grid-cols-3">
         {pricing_data.map((plan, index) => (
           <div
             key={index}

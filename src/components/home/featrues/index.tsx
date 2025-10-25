@@ -36,7 +36,7 @@ const data: Array<{
 
 const Features = () => {
   return (
-    <section className="container mx-auto px-5 my-30">
+    <section className="container mx-auto px-5 mt-30 mb-15">
       <h3 className="text-center text-[#932EFA] font-semibold">FEATURES</h3>
       <h2 className="text-[40px] text-center font-bold max-w-3xl mx-auto mt-3">
         Why choose Easy Pay for effortless payments?

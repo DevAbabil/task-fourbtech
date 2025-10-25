@@ -19,7 +19,7 @@ const Download = () => {
 
           <p className="text-gray-200 text-base lg:text-lg leading-relaxed">
             Ready for hassle-free, secure payments anywhere in the world? Start
-            using Monks Pay today — it’s fast, free, and built to keep your
+            using Monks Pay today — it&apos;s fast, free, and built to keep your
             transactions safe.
           </p>
 

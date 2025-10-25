@@ -38,7 +38,7 @@ const Testimonial = () => {
                 satisfaction with Monks Pay services.
               </p>
 
-              <div className="relative justify-center md:justify-start flex items-center gap-3 mt-4">
+              <div className="relative justify-center lg:justify-start flex items-center gap-3 mt-4">
                 <CarouselPrevious className="relative hover:text-primary-foreground hover:bg-foreground size-[45px]" />
                 <CarouselNext className="relative hover:bg-transparent text-primary-foreground bg-foreground size-[45px]" />
               </div>

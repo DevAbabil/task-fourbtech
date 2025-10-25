@@ -99,8 +99,8 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <PaymentReceived className="w-full md:w-[230px] md:absolute md:bottom-14 md:right-120" />
-            <ActiveUsers className="w-full md:w-[230px]  md:absolute md:bottom-73 md:right-8" />
+            <PaymentReceived className="w-full md:w-[230px] absolute bottom-15 md:bottom-14 md:right-120" />
+            <ActiveUsers className="w-full md:w-[230px]  absolute bottom-40 md:bottom-70 md:right-8" />
             <div className="bg-[url('/assets/hero-man.png')] bg-no-repeat transform scale-x-[-1]  bg-cover w-[620px] h-[600px]  absolute bottom-0 right-0 -z-1"></div>
           </motion.div>
         </div>

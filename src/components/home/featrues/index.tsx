@@ -38,7 +38,7 @@ const Features = () => {
   return (
     <section className="container mx-auto px-5 mt-40 mb-15" id="features">
       <h3 className="text-center text-[#932EFA] font-semibold">FEATURES</h3>
-      <h2 className="text-[40px] text-center font-bold max-w-3xl mx-auto mt-3">
+      <h2 className="text-[30px] md:text-[40px] text-center font-bold max-w-3xl mx-auto mt-3">
         Why choose Easy Pay for effortless payments?
       </h2>
 

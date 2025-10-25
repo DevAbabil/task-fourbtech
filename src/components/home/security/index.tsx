@@ -9,7 +9,7 @@ const Security = () => {
             <h3 className="text-[#932EFA] font-semibold text-sm md:text-base">
               SECURITY
             </h3>
-            <h2 className="text-3xl md:text-[40px] font-bold max-w-3xl mt-3 leading-tight w-lg">
+            <h2 className="text-3xl md:text-[40px] font-bold max-w-3xl mt-3 leading-tight md:w-lg">
               We protect your money at every step with Easy Pay
             </h2>
           </div>

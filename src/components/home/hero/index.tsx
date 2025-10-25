@@ -1,5 +1,3 @@
-"use client";
-
 import { Button, Logo, Navbar } from "@/components";
 import Image from "next/image";
 import ActiveUsers from "./ActiveUsers";
@@ -7,7 +5,7 @@ import PaymentReceived from "./PaymentReceived";
 
 const Hero = () => {
   return (
-    <section className="m-4 md:m-6 bg-[url('/assets/hero-bg.png')] bg-cover bg-center rounded-3xl">
+    <section className="m-4 md:m-6 bg-[url('/assets/hero-bg.png')] bg-cover bg-right rounded-3xl overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4 md:py-6 flex-wrap gap-4">
           <Logo />
@@ -17,8 +15,8 @@ const Hero = () => {
           </Button>
         </div>
 
-        <div className="flex flex-col-reverse md:flex-row justify-between">
-          <div className="text-center md:text-left py-26">
+        <div className="flex flex-col-reverse xl:flex-row justify-between">
+          <div className="text-center md:text-left py-26 w-full">
             <p className="text-sm md:text-base text-muted-foreground font-semibold tracking-wide">
               EASY PAYMENT
             </p>
@@ -66,9 +64,9 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="px-[300px] py-[295px] relative z-1">
-            <PaymentReceived className="absolute bottom-24 left-40" />
-            <ActiveUsers className="relative top-10 -right-69" />
+          <div className="flex w-full gap-3 flex-col md:px-[300px] py-[295px] relative z-1">
+            <PaymentReceived className="w-full md:w-auto md:absolute md:bottom-14 md:right-120" />
+            <ActiveUsers className="w-full md:w-auto md:absolute md:bottom-73 md:right-8" />
             <div className="bg-[url('/assets/hero-man.png')] bg-no-repeat transform scale-x-[-1]  bg-cover w-[620px] h-[600px]  absolute bottom-0 right-0 -z-1"></div>
           </div>
         </div>

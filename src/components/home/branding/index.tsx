@@ -1,16 +1,7 @@
 "use client";
+import { brand_logo } from "@/data";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-
-const brand_logo = [
-  "/assets/brand-logo/brand-a.svg",
-  "/assets/brand-logo/brand-b.svg",
-  "/assets/brand-logo/brand-c.svg",
-  "/assets/brand-logo/brand-d.svg",
-  "/assets/brand-logo/brand-e.svg",
-  "/assets/brand-logo/brand-f.svg",
-  "/assets/brand-logo/brand-g.svg",
-];
 
 const Branding = () => {
   return (

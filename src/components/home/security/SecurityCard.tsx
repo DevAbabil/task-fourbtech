@@ -2,49 +2,7 @@
 
 import { CSSProperties } from "react";
 import { motion } from "framer-motion";
-
-const security_data: Array<{
-  color: string;
-  title: string;
-  description: string;
-}> = [
-  {
-    color: "#2E68FD",
-    title: "Two-factor authentication",
-    description:
-      "Two-factor authentication ensures added protection by using verification steps.",
-  },
-  {
-    color: "#FC4343",
-    title: "Fraud detection and alerts",
-    description:
-      "Fraud detection safeguards your money, sending instant alerts for any activity.",
-  },
-  {
-    color: "#08A965",
-    title: "Transaction notifications",
-    description:
-      "Instant notifications for transactions keep you informed to manage your finances.",
-  },
-  {
-    color: "#3B7793",
-    title: "Biometric access",
-    description:
-      "Easily and securely log in with biometric features, and facial recognition.",
-  },
-  {
-    color: "#D77E1B",
-    title: "End-to-end encryption",
-    description:
-      "By encryption, protecting your data from unauthorized access.",
-  },
-  {
-    color: "#932EFA",
-    title: "24/7 Protection support",
-    description:
-      "Our dedicated team is available around the clock to help you.",
-  },
-];
+import { security_data } from "@/data";
 
 const SecurityCard = () => {
   return (

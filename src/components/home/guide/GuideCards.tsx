@@ -2,30 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-const guide_data = [
-  {
-    id: "01",
-    icon: "/assets/icon/download.svg",
-    title: "Download Easy Pay",
-    description:
-      "Get the Easy Pay app today from the App Store or Google Play hassle free.",
-  },
-  {
-    id: "02",
-    icon: "/assets/icon/bank-card.png",
-    title: "Link your bank or card",
-    description:
-      "Easily connect your account in seconds with advanced security for peace of mind.",
-  },
-  {
-    id: "03",
-    icon: "/assets/icon/card-paying.png",
-    title: "Start paying",
-    description:
-      "Easily split bills, send money to friends, and make smooth online payments instantly.",
-  },
-];
+import { guide_data } from "@/data";
 
 const GuideCards = () => {
   return (

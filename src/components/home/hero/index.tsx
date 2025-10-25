@@ -4,6 +4,7 @@ import Image from "next/image";
 import ActiveUsers from "./ActiveUsers";
 import PaymentReceived from "./PaymentReceived";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -16,7 +17,9 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           <div className="inline-block mx-auto md:block md:ml-0">
-            <Logo />
+            <Link href={"/"}>
+              <Logo />
+            </Link>
           </div>
           <div className="mx-auto md:ml-0">
             <Navbar />

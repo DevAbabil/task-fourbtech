@@ -1,11 +1,6 @@
+import { users_avatars } from "@/data";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-
-const users = [
-  "/assets/avatar-img-1.png",
-  "/assets/avatar-img-2.jpg",
-  "/assets/avatar-img-3.jpg",
-];
 
 const ActiveUsers = ({ className }: { className?: string }) => {
   return (
@@ -16,7 +11,7 @@ const ActiveUsers = ({ className }: { className?: string }) => {
       )}
     >
       <div className="flex -space-x-3">
-        {users.map((user, index) => (
+        {users_avatars.map((user, index) => (
           <div
             key={index}
             className="relative w-10 aspect-square rounded-full border-2 border-card overflow-hidden"

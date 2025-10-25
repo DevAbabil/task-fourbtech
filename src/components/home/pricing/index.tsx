@@ -4,46 +4,7 @@ import Button from "@/components/shared/Button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-const pricing_data: Array<{
-  label: string;
-  description: string;
-  price: number;
-  features: Array<string>;
-}> = [
-  {
-    label: "Free Plan",
-    description: "Free for personal payments.",
-    price: 0,
-    features: [
-      "Up to 100 transactions per month",
-      "Basic proud protection",
-      "Email support",
-    ],
-  },
-  {
-    label: "Advanced",
-    description: "Minimal fees for advanced transactions",
-    price: 19,
-    features: [
-      "Up to 1000 transactions per month",
-      "Advanced proud protection",
-      "Detailed transaction reports",
-      "Priority email & chat support",
-    ],
-  },
-  {
-    label: "Business",
-    description: "Premium business transactions",
-    price: 29,
-    features: [
-      "Unlimited transactions per month",
-      "Premium proud protection",
-      "Detailed transaction reports",
-      "Priority email & chat support",
-    ],
-  },
-];
+import { pricing_data } from "@/data";
 
 const Pricing = () => {
   return (

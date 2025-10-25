@@ -10,41 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-
-const testimonials = [
-  {
-    quote:
-      "As a developer, I love how smooth and intuitive the experience feels. Everything just works perfectly — no unnecessary complexity.",
-    name: "DevAbabil",
-    role: "Full-Stack Developer",
-    imgSrc: "/assets/avatar-img-4.jpg",
-    rating: 5,
-  },
-  {
-    quote:
-      "Experience a payment app built on simplicity and transparency. No hidden fees, just a seamless user experience that makes every transaction easy and stress-free. Say goodbye to confusion and hello to straightforward payments.",
-    name: "Ethan Williams",
-    role: "Digital Marketing Specialist",
-    imgSrc: "/assets/avatar-img-1.png",
-    rating: 5,
-  },
-  {
-    quote:
-      "Discover a payment app focused on simplicity and transparency. Enjoy a seamless experience with no hidden fees, providing clarity and ease in every transaction. It’s designed to put you in control of your payments.",
-    name: "Daniel Thompson",
-    role: "Product Designer",
-    imgSrc: "/assets/avatar-img-2.jpg",
-    rating: 4,
-  },
-  {
-    quote:
-      "Amazing experience! The design and functionality exceeded my expectations.",
-    name: "Ava Johnson",
-    role: "Product Designer",
-    imgSrc: "/assets/avatar-img-3.jpg",
-    rating: 4,
-  },
-];
+import { testimonials_data } from "@/data";
 
 const Testimonial = () => {
   return (
@@ -80,7 +46,7 @@ const Testimonial = () => {
 
             <div className="relative lg:w-2/3">
               <CarouselContent className="flex gap-6">
-                {testimonials.map((testimonial, index) => (
+                {testimonials_data.map((testimonial, index) => (
                   <CarouselItem
                     key={index}
                     className="w-full sm:basis-2/3 lg:basis-1/2 shrink-0 p-4"

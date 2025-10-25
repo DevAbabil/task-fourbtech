@@ -45,7 +45,9 @@ const Footer = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="inline-block">
-            <Logo />
+            <Link href={"/"}>
+              <Logo />
+            </Link>
           </div>
           <p className="text-muted-foreground max-w-md">
             Easy Pay offers secure, seamless, and fee-free payments for

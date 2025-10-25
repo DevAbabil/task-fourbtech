@@ -1,4 +1,7 @@
+"use client";
+
 import { CSSProperties } from "react";
+import { motion } from "framer-motion";
 
 const security_data: Array<{
   color: string;
@@ -45,16 +48,33 @@ const security_data: Array<{
 
 const SecurityCard = () => {
   return (
-    <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 text-left bg-[url('/assets/security-banner.png')] bg-cover bg-center p-1 md:p-15 rounded-2xl">
+    <motion.div
+      className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 text-left bg-[url('/assets/security-banner.png')] bg-cover bg-center p-1 md:p-15 rounded-2xl"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={{
+        visible: {
+          transition: {
+            staggerChildren: 0.2,
+          },
+        },
+      }}
+    >
       {security_data.map((item, index) => {
         const isMiddleColumn = index % 3 === 1;
 
         return (
-          <div
+          <motion.div
             key={index}
             className={`relative p-6 rounded ${
               isMiddleColumn ? "lg:border-l lg:border-r lg:border-gray-200" : ""
             }`}
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.6 }}
           >
             <div
               style={{ "--bg-color": item.color } as CSSProperties}
@@ -74,10 +94,10 @@ const SecurityCard = () => {
                 {item.description}
               </p>
             </div>
-          </div>
+          </motion.div>
         );
       })}
-    </div>
+    </motion.div>
   );
 };
 

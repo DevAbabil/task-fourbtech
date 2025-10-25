@@ -8,9 +8,13 @@ const Hero = () => {
     <section className="m-4 md:m-6 bg-[url('/assets/hero-bg.png')] bg-cover bg-right rounded-3xl overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4 md:py-6 flex-wrap gap-4">
-          <Logo />
-          <Navbar />
-          <Button variant="fill" className="w-full sm:w-auto">
+          <div className="inline-block mx-auto md:block md:ml-0">
+            <Logo />
+          </div>
+          <div className="mx-auto md:ml-0">
+            <Navbar />
+          </div>
+          <Button variant="fill" className="w-full md:w-auto">
             Contact Us
           </Button>
         </div>
